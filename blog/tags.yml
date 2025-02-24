@@ -1,0 +1,54 @@
+travel:
+  label: 游记
+  permalink: /travel
+  description: 记录去过的地方
+
+sichuang:
+  label: 四川
+  permalink: /sichuang
+  description: 四川
+
+chenzhou:
+  label: 郴州
+  permalink: /chenzhou
+  description: 郴州
+
+shenzhen:
+  label: 深圳
+  permalink: /shenzhen
+  description: 深圳
+
+beijing:
+  label: 北京
+  permalink: /beijing
+  description: 北京
+
+mymedia:
+  label: 媒体服务器
+  permalink: /mymedia
+  description: 媒体服务器
+
+toss:
+  label: 折腾
+  permalink: /toss
+  description: 折腾
+
+daily:
+  label: 日常
+  permalink: /daily
+  description: 折腾
+
+study:
+  label: 学习
+  permalink: /study
+  description: 学习
+
+k8s:
+  label: k8s
+  permalink: /k8s
+  description: k8s
+
+miscellaneous:
+  label: 杂记
+  permalink: /杂记
+  description: miscellaneous
