@@ -52,3 +52,8 @@ miscellaneous:
   label: 杂记
   permalink: /杂记
   description: miscellaneous
+
+vps:
+  label: VPS
+  permalink: /vps
+  description: vps
