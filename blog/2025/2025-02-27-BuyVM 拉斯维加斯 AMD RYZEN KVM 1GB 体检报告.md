@@ -1,10 +1,14 @@
 ---
-slug: buyvm3.5daolasiweijiasiceshiliudang
-title: 留档｜buyvm3.5刀拉斯维加斯测试
+slug: buyvm-lasvegas-amd-ryzen-kvm-1gb-tijianbaogao
+title: 留档｜BuyVM 拉斯维加斯 AMD RYZEN KVM 1GB 体检报告
 authors: [wuguipeng]
 tags: [vps]
---- 
+---
+<!-- truncate -->
 
+![](https://oss.wuguipeng.com/image/2025/02/7e572405084462a5646591d1350399ae8705fe6e.png)
+
+融合怪
 ```shell
 --------------------- A Bench Script By spiritlhl ----------------------
                    测评频道: https://t.me/vps_reviews                    
@@ -56,123 +60,6 @@ Block Size | 512k          (IOPS) | 1m            (IOPS)
 Read       | 1.54 GB/s     (3.0k) | 1.44 GB/s     (1.4k)
 Write      | 1.62 GB/s     (3.1k) | 1.54 GB/s     (1.5k)
 Total      | 3.16 GB/s     (6.1k) | 2.99 GB/s     (2.9k)
-------------流媒体解锁--基于oneclickvirt/CommonMediaTests开源-----------
-以下测试的解锁地区是准确的，但是不是完整解锁的判断可能有误，这方面仅作参考使用
-----------------Netflix-----------------
-[IPV4]
-您的出口IP可以使用Netflix，但仅可看Netflix自制剧
-NF所识别的IP地域信息：美国
-[IPV6]
-您的网络可能没有正常配置IPv6，或者没有IPv6网络接入
-----------------Youtube-----------------
-[IPV4]
-连接方式: Youtube Video Server
-视频缓存节点地域: NUQ(NUQ04S38)
-[IPV6]
-Youtube在您的出口IP所在的国家不提供服务
----------------DisneyPlus---------------
-[IPV4]
-当前出口所在地区解锁DisneyPlus
-区域：US 区
-[IPV6]
-DisneyPlus在您的出口IP所在的国家不提供服务
-解锁Netflix，Youtube，DisneyPlus上面和下面进行比较，不同之处自行判断
-----------------流媒体解锁--感谢RegionRestrictionCheck开源--------------
- 以下为IPV4网络测试，若无IPV4网络则无输出
-============[ Multination ]============
- Dazn:                                  Failed (Error: )
- Disney+:                               No (IP Banned By Disney+ 1)
- Netflix:                               Originals Only
- YouTube Premium:                       Yes (Region: US)
- Amazon Prime Video:                    Yes (Region: US)
- TVBAnywhere+:                          Yes
- Spotify Registration:                  Yes (Region: US)
- OneTrust Region:                       US [Nevada]
- iQyi Oversea Region:                   US
- Bing Region:                           US
- Apple Region:                          US
- YouTube CDN:                           Mountain View
- Netflix Preferred CDN:                 Los Angeles, CA
- ChatGPT:                               Yes
- Google Gemini:                         Yes (Region: USA)
- Claude:                                Yes
- Wikipedia Editability:                 No
- Google Play Store:                     United States 
- Google Search CAPTCHA Free:            Yes
- Steam Currency:                        USD
- ---Forum---
- Reddit:                                No
-=======================================
- 以下为IPV6网络测试，若无IPV6网络则无输出
----------------TikTok解锁--感谢lmc999的源脚本及fscarmen PR--------------
- Tiktok Region:         【US】
--------------IP质量检测--基于oneclickvirt/securityCheck使用-------------
-数据仅作参考，不代表100%准确，如果和实际情况不一致请手动查询多个数据库比对
-以下为各数据库编号，输出结果后将自带数据库来源对应的编号
-ipinfo数据库  [0] | scamalytics数据库 [1] | virustotal数据库   [2] | abuseipdb数据库   [3] | ip2location数据库    [4]
-ip-api数据库  [5] | ipwhois数据库     [6] | ipregistry数据库   [7] | ipdata数据库      [8] | db-ip数据库          [9]
-ipapiis数据库 [A] | ipapicom数据库    [B] | bigdatacloud数据库 [C] | cheervision数据库 [D] | ipqualityscore数据库 [E]
-IPV4:
-安全得分:
-声誉(越高越好): 0 [2] 
-信任得分(越高越好): 0 [8] 
-VPN得分(越低越好): 100 [8] 
-代理得分(越低越好): 100 [8] 
-社区投票-无害: 0 [2] 
-社区投票-恶意: 0 [2] 
-威胁得分(越低越好): 100 [8] 
-欺诈得分(越低越好): 93 [E] 28 [1]
-滥用得分(越低越好): 0 [3] 
-ASN滥用得分(越低越好): 0.0449 (High) [A] 
-公司滥用得分(越低越好): 0.118 (High) [A] 
-威胁级别: low [9 B] 
-黑名单记录统计:(有多少黑名单网站有记录):
-无害记录数: 59 [2]  恶意记录数: 0 [2]  可疑记录数: 0 [2]  无记录数: 35 [2]  
-安全信息:
-使用类型: DataCenter/WebHosting/Transit [3] hosting [0 7 8 9 A] hosting - high probability [C]
-公司类型: hosting [0 A] business [7]
-是否云提供商: Yes [7 D] 
-是否数据中心: No [1] Yes [0 5 6 8 A C]
-是否移动设备: No [5 A C] Yes [E]
-是否代理: Yes [5 E] No [0 1 4 6 7 8 9 A B C D]
-是否VPN: Yes [6 7 A D E] No [0 1 C]
-是否TorExit: No [1 7 D] 
-是否Tor出口: No [1 7 D] 
-是否网络爬虫: No [9 A B E] 
-是否匿名: Yes [6 7 D] No [1 8]
-是否攻击者: No [7 8 D] 
-是否滥用者: No [7 8 A C D] Yes [E]
-是否威胁: No [7 8 C D] 
-是否中继: No [0 7 8 C D] 
-是否Bogon: No [7 8 A C D] 
-是否机器人: No [E] 
-DNS-黑名单: 313(Total_Check) 0(Clean) 7(Blacklisted) 19(Other) 
-Google搜索可行性：NO
--------------邮件端口检测--基于oneclickvirt/portchecker开源-------------
-Platform  SMTP  SMTPS POP3  POP3S IMAP  IMAPS
-LocalPort ✔     ✔     ✔     ✔     ✔     ✔    
-QQ        ✘     ✘     ✔     ✘     ✔     ✘    
-163       ✘     ✘     ✔     ✘     ✔     ✘    
-Sohu      ✘     ✘     ✔     ✘     ✔     ✘    
-Yandex    ✘     ✘     ✔     ✘     ✔     ✘    
-Gmail     ✘     ✘     ✘     ✘     ✘     ✘    
-Outlook   ✘     ✘     ✔     ✘     ✔     ✘    
-Office365 ✘     ✘     ✔     ✘     ✔     ✘    
-Yahoo     ✘     ✘     ✘     ✘     ✘     ✘    
-MailCOM   ✘     ✘     ✔     ✘     ✔     ✘    
-MailRU    ✘     ✘     ✘     ✘     ✔     ✘    
-AOL       ✘     ✘     ✘     ✘     ✘     ✘    
-GMX       ✘     ✘     ✔     ✘     ✔     ✘    
-Sina      ✘     ✘     ✔     ✘     ✔     ✘    
-Apple     ✘     ✘     ✘     ✘     ✘     ✘    
-FastMail  ✘     ✘     ✘     ✘     ✘     ✘    
-ProtonMail✘     ✘     ✘     ✘     ✘     ✘    
-MXRoute   ✘     ✘     ✔     ✘     ✔     ✘    
-Namecrane ✘     ✘     ✔     ✘     ✔     ✘    
-XYAMail   ✘     ✘     ✘     ✘     ✘     ✘    
-ZohoMail  ✘     ✘     ✘     ✘     ✘     ✘    
-Inbox_eu  ✘     ✘     ✔     ✘     ✘     ✘    
-Free_fr   ✘     ✘     ✔     ✘     ✔     ✘    
 ----------------三网回程--基于oneclickvirt/backtrace开源----------------
 北京电信 219.141.140.10  电信163    [普通线路] 
 北京联通 202.106.195.68  联通4837   [普通线路] 
