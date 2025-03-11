@@ -57,3 +57,8 @@ vps:
   label: VPS
   permalink: /vps
   description: vps
+
+pve:
+  label: PVE
+  permalink: /pve
+  description: pve
