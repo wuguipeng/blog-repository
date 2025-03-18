@@ -1,7 +1,6 @@
 ---
 slug: study-k8s
 title: 学习｜kubernetes集群搭建
-authors: [wuguipeng]
 tags: [study,k8s]
 ---
 

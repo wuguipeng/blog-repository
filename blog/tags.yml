@@ -62,3 +62,33 @@ pve:
   label: PVE
   permalink: /pve
   description: pve
+mac:
+  label: MacBook
+  permalink: /mac
+  description: 关于MacBook电脑的一些使用心得
+
+site:
+  label: 建站
+  permalink: /site
+  description: 关于建站的一些心得
+
+archive:
+  label: 留档
+  permalink: /archive
+  description: 留档
+
+
+windows:
+  label: Windows
+  permalink: /windows
+  description: Windows系统使用心得
+
+docs:
+  label: 文档
+  permalink: /docs
+  description: 文档
+
+record:
+  label: 记录
+  permalink: /record
+  description: 记录

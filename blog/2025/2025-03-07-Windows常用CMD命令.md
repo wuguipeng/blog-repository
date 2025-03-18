@@ -1,8 +1,7 @@
 ---
 slug: windows-change-cmd-title
 title: 文档｜Windows 常用 CMD 命令
-authors: [wuguipeng]
-tags: [vps]
+tags: [docs,windows]
 ---
 <!-- truncate -->
 

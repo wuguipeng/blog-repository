@@ -1,8 +1,7 @@
 ---
 slug: buyvm-lasvegas-amd-ryzen-kvm-1gb-tijianbaogao
 title: 留档｜BuyVM 拉斯维加斯 AMD RYZEN KVM 1GB 体检报告
-authors: [wuguipeng]
-tags: [vps]
+tags: [archive,vps]
 ---
 <!-- truncate -->
 
