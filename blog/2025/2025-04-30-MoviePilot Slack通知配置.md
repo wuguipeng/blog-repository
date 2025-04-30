@@ -3,10 +3,12 @@ slug: moviepilot-slack
 title: 折腾｜MoviePilot Slack通知配置
 tags: [toss,mymedia]
 ---
-<!-- truncate -->
 
 # 前言
 MoviePilot官方支持的通知类型有**微信/Telegram/Slack/SynologyChat/VoceChat**。首选应该是Telegram，但是Telegram有网络要求，对于安装在国内的MP不太友好。可以使用代理，多了一层出故障的概率就越大，所以就pass掉Telegram。不想使用微信。SynologyChat和VoceChat不太熟悉。最后选了Slack。
+
+<!-- truncate -->
+
 
 MoviePilot的Wiki中对Slack的配置有说明，不太详细，而且Slack在2025年3月31日，弃用了Bots，相关教程也少，自己在配置Slack时踩了些坑，在此记录一下。
 
