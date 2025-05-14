@@ -36,7 +36,7 @@ toss:
 daily:
   label: 日常
   permalink: /daily
-  description: 折腾
+  description: 日常
 
 study:
   label: 学习
