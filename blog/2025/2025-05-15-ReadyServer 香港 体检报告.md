@@ -1,6 +1,6 @@
 ---
 slug: readyserver-xiang-gang-ti-jian-bao-gao
-title: 留档｜ReadyServer 香港 体检报告
+title: 留档｜ReadyServer 香港 性能测试
 tags: [archive,vps]
 ---
 <!-- truncate -->

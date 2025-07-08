@@ -3,8 +3,6 @@ slug: gitea-drone-huangjingdajianjilu
 title: 留档｜Gitea + Drone CI/CD 环境搭建记录
 tags: [archive,vps]
 ---
-
-## 环境选择
 Gitlab + Jenkins 功能全面，但是非常占用资源，GitLab 官方推荐的最低内存配置是4GB，Jenkins 又是使用Java开发的，这两都是内存大户。  
 Gitea + Drone 功能没有那么全，但是也够用了，在2G内存的服务器上也游刃有余。  
 
@@ -216,6 +214,28 @@ trigger:
 ```
 
 如果找不到/var/run/docker.sock，说明没有Drone Server启动时没有配置`DRONE_USER_CREATE`
+
+项目下的Dockerfile
+```dockerfile
+# 使用轻量级 Nginx 镜像
+FROM nginx:stable-alpine
+
+# 清除默认静态文件
+RUN rm -rf /usr/share/nginx/html/*
+
+# 复制本地已有的 dist 目录到 Nginx 静态目录
+COPY dist /usr/share/nginx/html
+
+# （可选）如果你使用了 React Router 的 history 模式， 
+# 可以自定义 Nginx 配置，将所有请求都转到 index.html：
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# 暴露 HTTP 端口
+EXPOSE 80
+
+# 以守护模式启动 Nginx
+CMD ["nginx", "-g", "daemon off;"]
+```
 ### Java Maven项目示例
 ```yml
 # .drone.yml
@@ -277,6 +297,24 @@ volumes:
   - name: maven-cache
     host:
       path: /var/lib/drone/cache/m2
+```
+
+项目下的Dockerfile
+```dockerfile
+# 使用轻量级 JDK 运行镜像
+FROM eclipse-temurin:17-jdk-alpine
+
+# 设置工作目录
+WORKDIR /app
+
+# 将 Drone 构建生成的 app.jar 复制进镜像
+COPY app.jar /app/app.jar
+
+# 暴露应用端口，请根据实际情况调整
+EXPOSE 8800
+
+# 启动应用
+ENTRYPOINT ["java", "-Xms256m", "-Xmx512m", "-jar", "/app/app.jar"]
 ```
 
 maven构建会缓存在主机的```/var/lib/drone/cache/m2```目录，如果项目有依赖其他项目。例如依赖common项目，那么可以在common项目中配置一个.drone.yml，使用mvn install 安装在缓存目录中，就可以正常构建。
