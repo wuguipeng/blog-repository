@@ -30,7 +30,7 @@ MoviePilot的Wiki中对Slack的配置有说明，不太详细，而且Slack在20
 10. 复制**Install App**中的*Bot User OAuth Token*和**Basic Information**中的*App-Level Tokens*，粘贴到MoviePilot的配置文件中。
 
 
-参考：
+参考：  
 https://wiki.movie-pilot.org/zh/notification MoviePilot文档  
 https://api.slack.com/quickstart Slack Api文档  
 https://github.com/jxxghp/MoviePilot/issues/2672 Slack 无法发送消息问题
