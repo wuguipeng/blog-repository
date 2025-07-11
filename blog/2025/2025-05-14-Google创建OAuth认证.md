@@ -1,7 +1,7 @@
 ---
 slug: create-google-oauth
 title: 文档｜创建Google OAuth
-tags: [toss]
+tags: [docs]
 ---
 
 在使用CloudDrive挂载Google Drive时，通过网页认证，会出现**此应用已被阻止**的问题。所以需要第二种方式，自己申请Google OAuth。此方式也同样也适用于Rclone挂载。

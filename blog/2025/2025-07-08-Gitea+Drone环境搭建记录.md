@@ -1,7 +1,7 @@
 ---
 slug: gitea-drone-huangjingdajianjilu
-title: 留档｜Gitea + Drone CI/CD 环境搭建记录
-tags: [archive,vps]
+title: 文档｜Gitea + Drone CI/CD 环境搭建记录
+tags: [docs,vps]
 ---
 Gitlab + Jenkins 功能全面，但是非常占用资源，GitLab 官方推荐的最低内存配置是4GB，Jenkins 又是使用Java开发的，这两都是内存大户。  
 Gitea + Drone 功能没有那么全，但是也够用了，在2G内存的服务器上也游刃有余。  
