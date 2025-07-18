@@ -15,7 +15,7 @@ import rehypeKatex from 'rehype-katex';
 const config = {
   title: 'Let me think!',
   tagline: 'A blog about software development and other things',
-  favicon: 'img/favicon.ico',
+  favicon: 'favicon.ico',
 
   // Set the production url of your site here
   url: 'https://wuguipeng.com',
@@ -100,7 +100,7 @@ const config = {
         title: 'Let me think!',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'logo.svg',
         },
         items: [
           // {
