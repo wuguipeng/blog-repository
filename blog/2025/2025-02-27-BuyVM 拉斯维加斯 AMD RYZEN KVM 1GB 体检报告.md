@@ -5,7 +5,7 @@ tags: [archive,vps]
 ---
 <!-- truncate -->
 
-![](https://oss.wuguipeng.com/image/2025/02/7e572405084462a5646591d1350399ae8705fe6e.png)
+![](https://media.wuguipeng.com/image/2025/02/7e572405084462a5646591d1350399ae8705fe6e.png)
 
 融合怪
 ```shell

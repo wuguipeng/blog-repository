@@ -20,18 +20,18 @@ import ReactPlayer from 'react-player'
 
 在初版的流程中，automate需要用户输入时间，金额，消费类型，备注。在经过一个星期的时候过后，发现时间和备注使用的次数极少，所以直接吧这两个流程优化掉，如果特殊需求，手动再notion中改一下就行。还有一个需要优化的地方是notion API请求，当网络请求失败时，会导致automate流程直接停止，需要重新启动流程在次数据输入，针对这个问题在automate中使用catch flow block，如果请求失败，会每隔5秒重新请求，重新请求三次都失败时会进入结束，但是流程不会终止，仍然可以在手机状态栏输入。目前整个流程极短，具体操作看手机操作视频。
 
-![记账流程](https://oss.wuguipeng.com/attachments/Screenshot_20240608-014625.jpg)
+![记账流程](https://media.wuguipeng.com/attachments/Screenshot_20240608-014625.jpg)
 
 
 记账流程
 <div className="video__wrapper">
-    <ReactPlayer className="video__player" controls height="100%" url="https://oss.wuguipeng.com/attachments/24-06-08-01-42-30.mp4" width="100%" />
+    <ReactPlayer className="video__player" controls height="100%" url="https://media.wuguipeng.com/attachments/24-06-08-01-42-30.mp4" width="100%" />
 </div>
 ### Notion端
 
 Notion端只复杂数据的存储，如果有特殊消费金额就在上面手动改一下数据就行。
 
-![notion](https://oss.wuguipeng.com/attachments/image_2024-06-08_02-15-20.png)
+![notion](https://media.wuguipeng.com/attachments/image_2024-06-08_02-15-20.png)
 
 notion
 
@@ -39,37 +39,37 @@ notion
 
 通过Google App Script脚本定时执行，调用Notion API接口，将Notion中的数据拉取到表格中，在将数据制作成图表（目前的图表一共有四个，最近一周消费趋势，总消费占比，月度账单和年度账单），再将图表发布嵌入到Notion记账看板中。后续根据需求可以扩展即可。Google App Script脚本扩展性极强，后续可以将日账单，月账单通过脚本发送到邮件或者TG通知。
 
-![https://oss.wuguipeng.com/attachments/image_2024-06-08_02-16-45.png](https://oss.wuguipeng.com/attachments/image_2024-06-08_02-16-45.png)
+![https://media.wuguipeng.com/attachments/image_2024-06-08_02-16-45.png](https://media.wuguipeng.com/attachments/image_2024-06-08_02-16-45.png)
 
-![https://oss.wuguipeng.com/attachments/image_2024-06-08_02-18-03.png](https://oss.wuguipeng.com/attachments/image_2024-06-08_02-18-03.png)
+![https://media.wuguipeng.com/attachments/image_2024-06-08_02-18-03.png](https://media.wuguipeng.com/attachments/image_2024-06-08_02-18-03.png)
 
 ## 睡眠记录|任务
 
 类似的流程还有睡眠记录，不过没有记账做的这么详细，目前做数据记录，记录每天大概的睡眠时间。Google Task用来做想法，任务，提醒，同时也会同步到Notion中，使用的是Zapier同步，Zapier免费用户一个月只有100次的同步量，所以不能用来建一些同步过于频繁的任务。
 
-![睡眠记录流程](https://oss.wuguipeng.com/attachments/Screenshot_20240608-014619.jpg)
+![睡眠记录流程](https://media.wuguipeng.com/attachments/Screenshot_20240608-014619.jpg)
 
 睡眠记录流程
 
 <div className="video__wrapper">
-    <ReactPlayer className="video__player" controls height="100%" url="https://oss.wuguipeng.com/attachments/24-06-08-01-42-53.mp4" width="100%" />
+    <ReactPlayer className="video__player" controls height="100%" url="https://media.wuguipeng.com/attachments/24-06-08-01-42-53.mp4" width="100%" />
 </div>
 
 演示视频
 
-![https://oss.wuguipeng.com/attachments/Screenshot_20240608-022034.jpg](https://oss.wuguipeng.com/attachments/Screenshot_20240608-022034.jpg)
+![https://media.wuguipeng.com/attachments/Screenshot_20240608-022034.jpg](https://media.wuguipeng.com/attachments/Screenshot_20240608-022034.jpg)
 
 ## 学习记录
 
 学习笔记现在主要记录《新概念英语二》的学习，在Notion中安排每个课时的学习时间，学习完成之后，再将课文中的重点难点交给ChatGPT生成一些用法，例句，再记录到Notion中。
 
-![https://oss.wuguipeng.com/attachments/image_2024-06-08_02-26-21.png](https://oss.wuguipeng.com/attachments/image_2024-06-08_02-26-21.png)
+![https://media.wuguipeng.com/attachments/image_2024-06-08_02-26-21.png](https://media.wuguipeng.com/attachments/image_2024-06-08_02-26-21.png)
 
 ### 选品
 
 根据我这两个月选品的流程，在Notion中也搭建了一套流程。先定一个大概的产品，在到1688找相关产品，找供应商要报价和图片，根据1688上的信息，供应商给的产品图片质量，报价等确定最终产品。产品确认后开始准备产品资料，做产品图文，最后上架。目前流程是搭建好了，使用次数还不够多，需要在使用一段时间看看效果。
 
-![https://oss.wuguipeng.com/attachments/image_2024-06-08_02-25-43.png](https://oss.wuguipeng.com/attachments/image_2024-06-08_02-25-43.png)
+![https://media.wuguipeng.com/attachments/image_2024-06-08_02-25-43.png](https://media.wuguipeng.com/attachments/image_2024-06-08_02-25-43.png)
 
 ## 图床优化
 
@@ -79,17 +79,17 @@ notion
 
 电报机器人以前我一直用的一个，也仅仅是做订阅通知，现在将图床功能加入进去后，我觉得有必要将机器人分为两个，一个用于通知（[https://t.me/PengNotificationsBot](https://t.me/PengNotificationsBot)），一个用于功能需求([https://t.me/PengAssistantBot](https://t.me/PengAssistantBot))，后续我可能还会加上其他通知和功能。
 
-![https://oss.wuguipeng.com/attachments/image_2024-06-08_02-22-26.png](https://oss.wuguipeng.com/attachments/image_2024-06-08_02-22-26.png)
+![https://media.wuguipeng.com/attachments/image_2024-06-08_02-22-26.png](https://media.wuguipeng.com/attachments/image_2024-06-08_02-22-26.png)
 
 ## ChatGPT
 
 以前一直用的是GPT3.5模型，最近找了人一起合租，五人车一个月25块钱，比其他车价格要低一些。用上GPT4.0和GPT4 co之后，发现GPT4确实比GPT3.5要好用很多，不仅能更准确的理解我的需求，整个聊天上下文也非常长，我在中间插入其他问题后，再回到原来的问题上，GPT4能处理的游刃有余。其他的优点还包括提取图片中的文字，图片生成，制作表格，绘制图表，产品价格分析等。例如：我在选品的时候，可以直接截图1688上的产品规格图，让GPT生成表格，汇总表格再分析价格优势绘制图表。总之GPT4已经成为我生活的一部份，后续还会接着续费。
 
-![提取表格](https://oss.wuguipeng.com/attachments/image_2024-06-08_02-23-03.png)
+![提取表格](https://media.wuguipeng.com/attachments/image_2024-06-08_02-23-03.png)
 
 提取表格
 
-![图表绘制](https://oss.wuguipeng.com/attachments/image_2024-06-08_02-23-11.png)
+![图表绘制](https://media.wuguipeng.com/attachments/image_2024-06-08_02-23-11.png)
 
 图表绘制
 

@@ -9,7 +9,7 @@ tags: [docs]
 <!-- truncate -->
 
 
-![应用已被阻止](https://raw.wuguipeng.com/image/2025/05/4d714ae15283e21064083b6941b779b03905534c.png)
+![应用已被阻止](https://media.wuguipeng.com/image/2025/05/4d714ae15283e21064083b6941b779b03905534c.png)
 
 CloudDrive使用RefreshToken登录，需要有**ClientId**、**ClientSecret**和**RefreshToken**。其中ClientId、ClientSecret需要在Google Cloud Platform创建OAuth认证，RefreshToken需要调用接口获取。
 
@@ -17,37 +17,37 @@ CloudDrive使用RefreshToken登录，需要有**ClientId**、**ClientSecret**和
 ### 1.前往[Google API](https://console.cloud.google.com/apis/api/drive.googleapis.com/overview)。  
 
 ### 2.创建项目
-![创建项目](https://raw.wuguipeng.com/image/2025/05/affa21abaad5b7cba4d69792e92c9f1465fd9d9e.png)
-![输入项目名称](https://raw.wuguipeng.com/image/2025/05/ff2126111f9ca59a09c2ad9293d519ab30947bad.png)
+![创建项目](https://media.wuguipeng.com/image/2025/05/affa21abaad5b7cba4d69792e92c9f1465fd9d9e.png)
+![输入项目名称](https://media.wuguipeng.com/image/2025/05/ff2126111f9ca59a09c2ad9293d519ab30947bad.png)
 
 等待项目创建完成，选择项目
 
 ### 3.配置权限请求页面
-![配置权限请求页面](https://raw.wuguipeng.com/image/2025/05/2977c6d392a9f1e767af931eccea27789ca6cce5.png)
-![开始](https://raw.wuguipeng.com/image/2025/05/4143c86656b8786b8119532c51c34a6f9c12370d.png)
-![应用信息](https://raw.wuguipeng.com/image/2025/05/378cbd6d1a1e3ddacfe3e3f40cebfa9f684b644f.png)
-![受众群体](https://raw.wuguipeng.com/image/2025/05/86030b58e1dc9e52fa2548ca0f20abaf5fce46d4.png)
-![联系人](https://raw.wuguipeng.com/image/2025/05/b7b0bf1be598f760d872b4d601f44cb1e2b51906.png)
+![配置权限请求页面](https://media.wuguipeng.com/image/2025/05/2977c6d392a9f1e767af931eccea27789ca6cce5.png)
+![开始](https://media.wuguipeng.com/image/2025/05/4143c86656b8786b8119532c51c34a6f9c12370d.png)
+![应用信息](https://media.wuguipeng.com/image/2025/05/378cbd6d1a1e3ddacfe3e3f40cebfa9f684b644f.png)
+![受众群体](https://media.wuguipeng.com/image/2025/05/86030b58e1dc9e52fa2548ca0f20abaf5fce46d4.png)
+![联系人](https://media.wuguipeng.com/image/2025/05/b7b0bf1be598f760d872b4d601f44cb1e2b51906.png)
 点击创建。
 
 
 
 ### 4.添加测试账号（没有添加不能登录）
-![添加测试账号](https://raw.wuguipeng.com/image/2025/05/b2eb5a87abf7b024ba7c0da40da0037334e5678a.png)
+![添加测试账号](https://media.wuguipeng.com/image/2025/05/b2eb5a87abf7b024ba7c0da40da0037334e5678a.png)
 
 ### 5.回到[Google API](https://console.cloud.google.com/apis/api/drive.googleapis.com/overview)
 如果这个项目没有启用Google Drive API，会提示启用。
 
-![启用](https://raw.wuguipeng.com/image/2025/05/7ec602f376be1749847570c949a1bed42f865e54.png)
+![启用](https://media.wuguipeng.com/image/2025/05/7ec602f376be1749847570c949a1bed42f865e54.png)
 
 ### 6.创建OAuth凭据
-![创建OAuth](https://raw.wuguipeng.com/image/2025/05/360fda5bd0fbdccf250f8f4a6619a03eadde189e.png)
+![创建OAuth](https://media.wuguipeng.com/image/2025/05/360fda5bd0fbdccf250f8f4a6619a03eadde189e.png)
 
 应用类型和应用名称随便填写，重定向URL按需求填写，可以填**http:\//127.0.0.1**，后面需要用上，点击创建。
-![创建](https://raw.wuguipeng.com/image/2025/05/e86c9837051084e1a84f35b41f2a9833a04a50df.png)
+![创建](https://media.wuguipeng.com/image/2025/05/e86c9837051084e1a84f35b41f2a9833a04a50df.png)
 
 复制**客户端 ID**和**客户端密钥**，点击完成。
-![创建完成](https://raw.wuguipeng.com/image/2025/05/0684a4b59b717e0651010ef1f611af50c3684c3b.png)
+![创建完成](https://media.wuguipeng.com/image/2025/05/0684a4b59b717e0651010ef1f611af50c3684c3b.png)
 
 ## 获取RefreshToken
 

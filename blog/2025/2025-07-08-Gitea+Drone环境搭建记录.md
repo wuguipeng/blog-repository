@@ -43,7 +43,7 @@ services:
 ```
 
 启动后创建OAuth2应用程序，填写Drone的登录地址。
-![](https://oss.wuguipeng.com/image/2025/07/cd2c718245d58df6d3f5f47b0560acfa17a34315.jpg)
+![](https://media.wuguipeng.com/image/2025/07/cd2c718245d58df6d3f5f47b0560acfa17a34315.jpg)
 创建成功后复制**客户端ID**和**客户端密钥**
 
 如果项目已经有其他网站进行托管，在原来的基础上加上gitea地址。

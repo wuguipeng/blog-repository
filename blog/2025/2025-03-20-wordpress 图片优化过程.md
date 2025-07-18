@@ -31,11 +31,11 @@ WordPress站点访问速度和很多因素有关，其中影响较大的就是�
 remove.bg处理效果很好，但是需要收费。  
 
 经过一番测试后，我发现Mac上自带的预览处理透明效果还不错。
-![](https://oss.wuguipeng.com/image/2025/03/17b61a445e17e50dd33638971707c8a255b786ce.png)
+![](https://media.wuguipeng.com/image/2025/03/17b61a445e17e50dd33638971707c8a255b786ce.png)
 
 **使用预览打开图片 -> 点击“显示标记工具栏” -> 点击“即使Alpha” -> 拖动图像选择 -> 鼠标松开后就会自动框选 -> 按Delete键删除背景。**
 
-![](https://oss.wuguipeng.com/image/2025/03/5a1123b67ab5f034090c873449b939959ee75840.png)
+![](https://media.wuguipeng.com/image/2025/03/5a1123b67ab5f034090c873449b939959ee75840.png)
 
 比传统的PS、GIMP处理起来更简单，比ImageMagisk命令行工具，可视化处理会更加友好。在线工具需要上传下载麻烦不说，处理还需要收费。当然**即时Alpha**也不是万能的，在处理背景色和物体本身的颜色相近的时候，**即时Alpha**无法准确的识别到物体边缘，还是会出现有锯齿的情况。
 
@@ -52,7 +52,7 @@ remove.bg处理效果很好，但是需要收费。
 图像处理完成之后，将图像上传到图床。
 
 在WordPress中下载一款名为[EXMAGE - WordPress Image Links](https://wordpress.org/plugins/exmage-wp-image-links/)的插件。
-![](https://oss.wuguipeng.com/image/2025/03/1385d50083b5ea4cf490bc4ca20d55acf7c98c28.png)
+![](https://media.wuguipeng.com/image/2025/03/1385d50083b5ea4cf490bc4ca20d55acf7c98c28.png)
 
 安装激活后在上传媒体时就会出现填写URL的地方，将图片添加进去后就会出现在Media里，和自己上传的图片使用方式相同。
 
