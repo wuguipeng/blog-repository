@@ -97,3 +97,8 @@ react:
   label: REACT
   permalink: /react
   description: REACT
+
+cloudpan:
+  label: 网盘
+  permalink: /cloudpan
+  description: 网盘
