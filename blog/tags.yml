@@ -102,3 +102,8 @@ cloudpan:
   label: 网盘
   permalink: /cloudpan
   description: 网盘
+
+company:
+  label: 工商
+  permalink: /company
+  description: 工商
